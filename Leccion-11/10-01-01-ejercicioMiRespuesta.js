@@ -114,5 +114,5 @@ console.log(empleado1.toString());
 
 let cliente1 = new Cliente('Juan', 'Martinez', 22, new Date());
 console.log(cliente1.toString());
-console.log(cliente1.idCliente);
+
 
