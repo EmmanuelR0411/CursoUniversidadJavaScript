@@ -115,4 +115,6 @@ console.log(empleado1.toString());
 let cliente1 = new Cliente('Juan', 'Martinez', 22, new Date());
 console.log(cliente1.toString());
 
+/* En este ejercicio podemos observar como se maneja la herencia */
+
 
