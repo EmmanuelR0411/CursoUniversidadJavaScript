@@ -1,0 +1,63 @@
+html{
+    /* Hacemos que el html abarque el 100% */
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    /* Agregamos un gradiente con degradado, este es un degradado lineal y va de el primer color que 
+    se ingresa al segundo */
+    background: linear-gradient(#7209b7,#3F37c0);
+}
+
+.contenedor {
+    /* Agregamos un margen de 50px en la parte superior e inferior y auto en la parte izquierda y
+    derecha para que se centre */
+    margin: 50px auto;
+    /* Para que se pueda ver el margen debemos agregar un ancho, en este caso uno de 400px */
+    width: 400px;
+    padding: 30px;
+    background: rgba(0, 0, 0,.5);
+
+    /* Redondeamos las esquinas del contenedor */
+    border-radius: 10px;
+}
+
+/* Especificamos que los estilos solo se van a aplicar a los h2 dentro del contenedor */
+.contenedor h2 {
+    /* Agregamos un margen de 0 en la parte superor, derecha e izquierda y de 30px en la 
+    parte inferior */
+    margin: 0 0  30px;
+    padding: 0;
+    font-size: 30px;
+    color: #4cc9f0;
+    text-align: center;
+}
+
+/* Especificamos que se afectaran a todos los label que se enceuntren dentro de un div de 
+elemento y a su vez dentro de un div de contenedor */
+.contenedor .elemento label{
+    color: #fff;
+}
+
+.contenedor .elemento input{
+    width: 100%;
+    padding: 10px 0px;
+    color: #fff;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 30px;
+}
+
+/* Modificamos solamente el boton (elementos de tipo submit */
+.contenedor .elemento input[type="submit"]{
+    background-color: #f72585;
+    border: none;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    /* Cambiar el icono del raton cuando se posiciona en el elemento */
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 30px;
+}

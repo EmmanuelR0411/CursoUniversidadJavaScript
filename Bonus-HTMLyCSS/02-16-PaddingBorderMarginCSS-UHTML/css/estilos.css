@@ -1,0 +1,18 @@
+h1{
+    color:blue; 
+ }
+ p{
+     color:white;
+     background-color: crimson;
+     /* Padding es el margen interno, se pueden colocar cuatro valores y se establecen todos
+     (superior derecho inferior izquierda) */
+     padding: 15px;
+     /* Border es lo que rodea al elemento */
+     border: 10px solid powderblue;
+     /* Lo que lo separa de los demas elementos */
+     margin:50px;
+
+     /* margin: auto sirve para centrar nuestros elementos de manera horizontal */
+     /* text.aling: center sirve para centrar el texto */
+     text-align: center;
+ }

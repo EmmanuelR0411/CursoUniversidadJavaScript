@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+    <!-- Medienate action poemos indicar cual es el componente del lado del servidor o la url
+    que se va a procesar, tambien form tiene el atributode target, por default tiene el valor de 
+_self, esto hace que la respuesta se visualice dentro de la misma vetana en que se esta trabajando
+ tambien esta _blank, que hace que la respuesta se visualice en una nueva eventana
+tambien existe el atributo de autocomplete, por default tiene on-->
+    <form action="mi_servidor">
+        <!-- fieldset sirve para poner un marco alredeor del from(todo es visual, no afecta el
+            funcionamiento) -->
+        <fieldset>
+            <!-- Con legend podemos poner un encabezado al formulario -->
+            <legend>Datos Persona:</legend>
+
+            <!-- En el for se utiliza el mismo nombre que esta en el name del input para que 
+            estos dos elementos se relacionen -->
+
+            
+            <label for="idPersona">Id Persona:</label><br/>
+            <input type="text" id="idPersona" name="idPersona" 
+                readonly = "true" value = "100" disabled = "true"/><br/>
+                <!-- Con readonly = true evitamos que este campo sea rellenado y con disabled
+                hacemos que se desabiliten los input pero si se pone como sdesabilitado esa
+            inforamcion ya no sera enviada -->
+
+            <!-- Envio de parametros ocultos -->
+            <!-- Con hidden indicamos que sera un valor oculto -->
+            <input type="hidden" id="sistema" name="sistema" value="SAP"/>
+
+            <label for="nombre">Nombre:</label><br/>
+            <input type="text" id="nombre" name="nombre" 
+                placeholder="Escribe tu nombre" required="true"/><br/>
+
+            <label for="apellido">Apellido:</label><br/>
+            <input type="text" id="apellido" name="apellido"
+                placeholder="Escribe tu apellido" required="true"/><br/>
+
+            <label for="email">Email:</label><br/>
+            <input type="email" id="email" name="email"/><br/> 
+
+            <label for="edad">Edad:</label><br/>
+            <input type="number" id="edad" name="edad"/><br/>
+
+            <label>Género</label><br/>
+            <input type="radio" id="femenino" name="genero" value="femenino"/>
+            <label for="femenino">Femenino</label><br/>
+            <input type="radio" id="masculino" name="genero" value="masculino"/>
+            <label for="masculino">Masculino</label><br/>     
+            
+            <label>Género Música Favorita</label><br/>
+            <input type="checkbox" id="clasica" name="musica" value="clasica"/>
+            <label for="clasica">Clásica</label><br/>
+            <input type="checkbox" id="jazz" name="musica" value="jazz"/>
+            <label for="jazz">Jazz</label><br/>
+            
+            <label for="autos">Marca Auto favorita:</label><br/>
+            <select id="autos" name="autos">
+                <!-- Cuando se envia la informacion se manda el valor del value -->
+                <option value="volvo">Volvo</option>
+                <option value="bmw">BMW</option>
+                <option value="audi" selected="true">Audi</option>
+            </select><br/>
+
+            <label for="comentario">Comentario:</label><br/>
+            <textarea id="comentario" name="comentario" rows="2" cols="30"
+            >Este es mi comentario    
+            </textarea><br/>
+
+            <br/>
+            <input type="submit" value="Enviar"/>
+            <!-- formnovalidate sirve para que se pueda enviar el formulario sin ninguna validadcion -->
+            <input type="submit" formnovalidate="formnovalidate" 
+                value="Enviar sin validar"/>
+
+            <!-- Boton para resetear el formulario -->
+            <input type="reset" value="Restablecer"/>
+        </fieldset>    
+    </form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+h1{
+    color: #f07167;
+}
+/* Cambiamos el color del link por default */
+a:link {
+    /* El color se aplica para los elementos a los que aun no se les ha dado click */
+    color:#fb8500;
+    /* Con esto podemos quitar el subrayado del texto */
+    text-decoration: none;
+}
+
+/* Aqui agregamos otro estado de link, en este caso visited hace referencia a cuando ya
+hemos dado click sobre el elemento */
+a:visited{
+    color:#219ebc;
+    /* Con esto podemos quitar el subrayado del texto */
+
+    text-decoration: none;
+}
+
+/*cuando nos ponemos encima del link*/
+a:hover{
+    color:#8ecae6;
+    text-decoration: underline;
+}
+
+/* Cuando damos click sobre cierto elemento */
+a:active {
+    color: #023047;
+    /* Cuando nos ponemos sobre el link si agrega el text decoration, en este caso el subrayado */
+    text-decoration: underline;
+}

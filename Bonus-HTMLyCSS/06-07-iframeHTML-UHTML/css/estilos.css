@@ -1,0 +1,29 @@
+.titulo{
+    color: #f72585;
+    text-align: center;
+}
+.marco{
+    /* Usamos el 100% del ancho */
+    width: 100%;
+    /* Declaramos un alto de 200px */
+    height: 200px;
+    /* Modificamos el borde del iframe */
+    border: 1px solid #f72585;
+}
+.centrar{
+    text-align: center;
+}
+.boton{
+    background-color: white;
+    border: 2px solid #457b9d;
+    text-decoration: none;
+    /* Al estar dentro de un div se comporta como bloque asi que aqui indicamos
+    que se despligue en la linea pero de la misma forma se comporte como bloque, de esta forma 
+    respeta el padding que estamos agregando */
+    display: inline-block;
+    padding: 10px;
+}
+.boton:hover{
+    background-color: #457b9d;
+    color: white;
+}

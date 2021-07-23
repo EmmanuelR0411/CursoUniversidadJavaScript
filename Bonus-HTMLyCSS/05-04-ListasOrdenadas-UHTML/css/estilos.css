@@ -1,0 +1,22 @@
+ol{
+    list-style: none;
+    /* Dentro de la lista se tiene que especificar que se utilizara la variable del contador */
+    counter-reset: contador;
+}
+ol li{
+    /* Indicamos que por cada elemento se incrementara la variable de ontador */
+    counter-increment: contador;
+}
+
+/* Agregamos un selector, modificando los elementos de la lista ordenada (before=antes antes de que
+se visualice el elemento) */
+ol li::before{
+    /*  Con content podemos agregar algo antes de que se muestre nuestra lista, de igual forma
+    utilizamos la funcion counter() para agregar un contador*/
+    content: 'Curso ' counter(contador) ') ';
+    color:#ff6f00;
+}
+/* Agregamos algo despues del contenido */
+ol li::after{
+    content: '.';
+}

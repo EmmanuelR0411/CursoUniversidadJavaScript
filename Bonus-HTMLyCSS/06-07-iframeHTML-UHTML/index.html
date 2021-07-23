@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe en HTML</title>
+    <link href="css/estilos.css" rel='stylesheet'/>
+</head>
+<body>
+    <h1 class='titulo'>Uso de iframe en HTML</h1>
+    <!-- Con la etiqueta iframe creamos un marco o frame para poder incustrar otros elementos HTML
+    se  incrusta lo que este dentro del archivo que se enlaza con el src, se pueden cargar otras 
+paginas, documentos, videos, etc -->
+    <iframe src='texto.html' name='marco1' class="marco"></iframe>
+
+    <div class='centrar'>
+        <!-- Mostramos el sitio web en el iframe mediante el link, para esto utilizamos la propiedad
+        target, el cual tiene que ser el mismo que el name del iframe en donde se quiere cargar -->
+        <a href="http://globalmentoring.com.mx" target="marco1" class='boton'>
+            Cargar Sitio Global Mentoring
+        </a>
+    </div>
+
+</body>
+</html>
