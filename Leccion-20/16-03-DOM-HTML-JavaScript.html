@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo DOM con JavaScript</title>
+</head>
+<body>
+    <h1 id='cabecero'>Ejemplo DOM con JavaScript</h1>
+    <p id='parrafo'>Saludos!</p>
+
+    <script>
+        let cabecero = document.getElementById('cabecero');
+        /* Con innerHTML accedemos al valor del elemento que se esta seleccionando mediante su id
+        inner significa interno por eso se puede recuperar el texto que es interno al elemento
+        seleccionado */
+        console.log( `valor cabecero: ${cabecero.innerHTML}`);
+        let parrafo = document.getElementById('parrafo');
+        console.log('valor parrafo:' + parrafo.innerHTML);
+        console.log('saludos desde JavaScript');
+        /* Cambiamos el valor del parrafo mediante DOM */
+        parrafo.innerHTML = 'Nuevo valor del párrafo';
+        /* Cambiamos el valor del h1 mediante DOM */
+        cabecero.innerHTML = 'Nuevo Cabecero';
+
+    </script>
+</body>
+</html>

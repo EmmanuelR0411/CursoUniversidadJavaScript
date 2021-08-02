@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo DOM con JavaScript</title>
+</head>
+<body>
+    <h1>Manejo DOM con JavaScript</h1>
+    <button onclick="mostrar()">Mostrar</button>
+    <br/>
+    <script>
+        /* Con .write escribimos directamente al flujo del documento html y sobreescribe cualquier
+        informacion previa a esta */
+        document.write('Saludos desde JavaScript');
+        
+        function mostrar(){
+            /* Cuando se vuelve a utilizar el document.write una vez que se ha cargado el documento html
+            es cuando se sobreescribe por completo */
+            document.write('Adios');
+        }
+    </script>
+</body>
+</html>

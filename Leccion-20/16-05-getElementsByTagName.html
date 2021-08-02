@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo DOM con JavaScript</title>
+</head>
+<body>
+    <h1 id='cabecero'>Ejemplo DOM con JavaScript</h1>
+    <p>Saludos!</p>
+    <p>Otro parrafo</p>
+    <script>
+        /* Con getElementsByTagName recuperamos los elementos con su etiqueta, esterecupera todos
+        los elementos que tengan la etiqueda que se le pase como valor, en este caso un parrafo (p) */
+        let parrafos = document.getElementsByTagName('p');
+        /* Con .length nos arroja el numero de parrafos que esta recuperando ya que recupera no uno
+        sino varios, en este caso 2 */
+        console.log( `No. párrafos: ${parrafos.length}`);
+        /* Utilizamos un ciclo for para poder acceder a cadqa uno de los elementos recuperados */
+        for(let i=0; i<parrafos.length;i++){
+            /* Imprimimos el valor interno de cada parrafo */
+            console.log(`${i} - ${parrafos[i].innerHTML}`);
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo DOM con JavaScript</title>
+</head>
+<body>
+    <h1 id='titulo'>Manejo DOM con JavaScript</h1>
+    <button onclick="mostrar()">Mostrar</button>
+    <br/>
+    <script>
+        function mostrar(){
+            /* Mediante el DOM tambien se pueden modificar el style de los elementos html */
+           document.getElementById('titulo').style.color = 'red'; 
+       } 
+    </script>
+</body>
+</html>
