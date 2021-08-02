@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo DOM con JavaScript</title>
+</head>
+<body>
+    <h1 id='titulo'>Manejo DOM con JavaScript</h1>
+    <br/>
+    <div id='mostrar'></div>
+    <script>
+        /* Recuperamos el elemento de titulo y le asociamos una funcion que se ejecuta cuando el evento
+        onclick se cumpla (es una funcion de tipo callback) */
+        document.getElementById('titulo').onclick = cambiarTexto;
+
+        function cambiarTexto(){
+            document.getElementById('mostrar').innerHTML = 'Nuevo contenido';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo DOM con JavaScript</title>
+</head>
+<body>
+    <!-- onmouseover es cuando pasas el raton por el elemento y onmouseout es cuando quitas el raton
+    del elemento -->
+    <h1 id='titulo' onmouseover="rojo(this)" onmouseout="azul(this)">
+        Manejo DOM con JavaScript
+    </h1>
+    <br/>
+    <script>
+        function rojo(titulo){
+            titulo.style.color = 'red';
+            titulo.innerHTML = "Sobre el elemento";
+        }
+        function azul(titulo){
+            titulo.style.color = 'blue';
+            titulo.innerHTML = "Fuera del elemento";
+        }
+    </script>
+</body>
+</html>

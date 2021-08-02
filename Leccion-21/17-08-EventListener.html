@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo DOM con JavaScript</title>
+</head>
+<body>
+    <h1 id='titulo'>Manejo DOM con JavaScript</h1>
+    <br/>
+    Nombre: <input type="text" id='nombre'/>
+    <br/><br/>
+    Apellido: <input type="text" id='apellido'/>
+    <script>
+        /* addeventlistener es el metodo que se utiliza para agregar uno o mas eventos mediante js
+        al usar esto, tambien se les quita el 'on' a los eventos*/
+        document.getElementById('nombre').addEventListener('focus', cambiar);
+        document.getElementById('nombre').addEventListener('blur', regresar);
+
+        document.getElementById('apellido').addEventListener('focus', cambiar);
+        document.getElementById('apellido').addEventListener('blur', regresar);
+
+        function cambiar(evento){
+            /* Aqui recuperamos el evento que se ejecuto, con target hacemos esta recuperacion
+            como si hubieramos uutilizado el operador this (objetos) */
+            let componente = evento.target;
+            componente.style.background = 'yellow';
+        }
+        function regresar(evento){
+            /* Aqui recuperamos el evento que se ejecuto, con target hacemos esta recuperacion
+            como si hubieramos uutilizado el operador this (objetos) */
+            evento.target.style.background = 'white';
+        }
+    </script>
+</body>
+</html>

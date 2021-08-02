@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo DOM con JavaScript</title>
+</head>
+<body>
+    <h1 id='titulo'>Manejo DOM con JavaScript</h1>
+    <br/>
+    <form id='forma'>
+        Nombre: <input type="text" id='nombre'/>
+        <br/><br/>
+        Apellido: <input type="text" id='apellido'/>
+    </form>
+    
+    <script>
+        /* Recuperamos el formulario, lo que significa que recuperamos cada elemento del formulario */
+        const forma = document.getElementById('forma');
+        
+        /* Aplicamos el evento focus y blur a todo el formulario, se coloca con una funcion flfecha
+        porque ya no se tiene que reutilizar el codigo */
+        forma.addEventListener('focus', (evento)=>{
+            evento.target.style.background = 'yellow';
+            /* Con el parametro de true indicamos que lo que estamos haciendo no solamente se 
+            aplique para el formulario sino tambien para los elementos internos
+            A esto se le conoce como delegacion de evento o useCapture, nos permite propagar
+            la informacion que se configura en el elemento mas externo hacia los mas internos*/
+        }, true);
+        forma.addEventListener('blur', (evento)=>{
+            evento.target.style.background = '';
+        }, true);
+
+       
+    </script>
+</body>
+</html>
