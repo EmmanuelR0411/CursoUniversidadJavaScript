@@ -1,0 +1,36 @@
+#reloj{
+    /* Cambiamos la funte  */
+    font-family: sans-serif;
+    /* Tamaño de la fuente */
+    font-size: 60px;
+    /* Se agrega una sombra al texto */
+    text-shadow: 0px 0px 1px #333;
+    /* Cambiamos el color de la fuente */
+    color:#fff;
+}
+.reloj-contenedor{
+    /* Damos un color a la caja del reloj */
+    background-color: rgb(12, 119, 206);
+    /* Agregamos un margen interno */
+    padding: 25px;
+    /* Le damos un tamaño maximo de 350px */
+    max-width: 350px;
+    text-align: center;
+    /* Redondeamos los bordes */
+    border-radius: 5px;
+    /* Centramos el elemento */
+    margin: 0 auto;
+    /* Agregamos un margen arriba */
+    margin-top: 10%;
+}
+#fecha{
+    /* Agregamos un espacio entre las letras */
+    letter-spacing: 10px;
+    /* Tamaño de la fuente */
+    font-size: 15px;
+}
+/* Creamos la animacion del reloj */
+.animar{
+    /* Agregamos un borde */
+    border: rgb(0, 0, 0) 2px solid;
+}
